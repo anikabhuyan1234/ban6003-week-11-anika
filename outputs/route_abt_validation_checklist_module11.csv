@@ -1,0 +1,9 @@
+check,result,status,notes
+Duplicate route keys (origin + dest),0,Pass,Each route should appear only once.
+"Missing key values (origin, dest)",0,Pass,Every route must have an origin and destination.
+Missing ABT cells (all columns),25,Needs attention,Missing values need to be reviewed and documented.
+"Nonpositive flight counts, distances and air times",0,Pass,These values should be positive.
+Routes with a negative max_arr_delay,4,Documented,Negative maximum delays may represent routes where all flights arrived early.
+Missing target values (avg_arr_delay),1,Needs attention,Missing target values must be handled before modeling.
+ABT columns without a dictionary row,0,Pass,Every ABT column needs a dictionary entry.
+Blank data dictionary cells,4,Needs attention,All dictionary fields must be completed.
